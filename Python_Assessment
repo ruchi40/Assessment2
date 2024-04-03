@@ -1,0 +1,61 @@
+---------------------------------------------------PYTHON ASSESSMENT------------------------------------------------------------
+---------Question 1:----------
+list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+even_num = [x for x in list if x % 2 == 0]
+print(even_num)
+# output: [2, 4, 6, 8, 10]
+
+
+---------Question 2:----------
+class Person:
+    def __init__(self, name, age, gender):
+        self.name = name
+        self.age = age
+        self.gender = gender
+
+    def __str__(self):
+        return f"Name: {self.name}, Age: {self.age}, Gender: {self.gender}"
+
+# Example:
+person1 = Person("Ruchi", 20, "Female")
+print(person1) 
+#Output: Name: Ruchi, Age: 20, Gender: Female
+
+
+---------Question 3:----------
+string = ['apple', 'banana', 'cherry', 'date']
+
+sorted_list = sorted(string, key=lambda x: len(x))
+
+print(sorted_list)
+#output:  ['date', 'apple', 'banana', 'cherry']
+
+
+
+---------Question 4:----------
+class Vehicle:
+    def drive(self):
+        print("Driving a vehicle.")
+
+class Car(Vehicle):
+    def drive(self):
+        print("Driving a car.")
+
+class Truck(Vehicle):
+    def drive(self):
+        print("Driving a truck.")
+
+class Motorcycle(Vehicle):
+    def drive(self):
+        print("Riding a motorcycle.")
+
+# Example:
+vehicle = Vehicle()
+car = Car()
+truck = Truck()
+motorcycle = Motorcycle()
+
+vehicle.drive()  # Output: Driving a vehicle.
+car.drive()      # Output: Driving a car.
+truck.drive()    # Output: Driving a truck.
+motorcycle.drive()  # Output: Riding a motorcycle.
